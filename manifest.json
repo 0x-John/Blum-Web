@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Blum Web",
+  "version": "1.0",
+  "permissions": [
+    "declarativeNetRequest",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "*://telegram.blum.codes/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "48": "icon.png"
+    }
+  },
+  "description": "Предоставляет доступ к Blum с веб-версии Telegram.",
+  "icons": {
+    "48": "icon.png"
+  }
+}
